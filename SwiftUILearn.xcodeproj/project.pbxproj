@@ -11,6 +11,8 @@
 		184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DAA2C53EB3000A743A3 /* ContentView.swift */; };
 		184A2DAD2C53EB3100A743A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184A2DAC2C53EB3100A743A3 /* Assets.xcassets */; };
 		184A2DB12C53EB3100A743A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184A2DB02C53EB3100A743A3 /* Preview Assets.xcassets */; };
+		184A2DBB2C550BFE00A743A3 /* 04Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DBA2C550BFE00A743A3 /* 04Stack.swift */; };
+		184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		184A2DAC2C53EB3100A743A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184A2DAE2C53EB3100A743A3 /* SwiftUILearn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUILearn.entitlements; sourceTree = "<group>"; };
 		184A2DB02C53EB3100A743A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		184A2DBA2C550BFE00A743A3 /* 04Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 04Stack.swift; sourceTree = "<group>"; };
+		184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 05ScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				184A2DA82C53EB3000A743A3 /* SwiftUILearnApp.swift */,
 				184A2DAA2C53EB3000A743A3 /* ContentView.swift */,
+				184A2DBA2C550BFE00A743A3 /* 04Stack.swift */,
+				184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */,
 				184A2DAC2C53EB3100A743A3 /* Assets.xcassets */,
 				184A2DAE2C53EB3100A743A3 /* SwiftUILearn.entitlements */,
 				184A2DAF2C53EB3100A743A3 /* Preview Content */,
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */,
 				184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */,
+				184A2DBB2C550BFE00A743A3 /* 04Stack.swift in Sources */,
 				184A2DA92C53EB3000A743A3 /* SwiftUILearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
