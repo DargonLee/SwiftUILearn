@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1833F8AE2CEF080000417C8F /* 01Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833F8AD2CEF07EE00417C8F /* 01Alignment.swift */; };
+		1833F8B02CEF1A8900417C8F /* 02AlignmentGuidesTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833F8AF2CEF1A7F00417C8F /* 02AlignmentGuidesTool.swift */; };
 		184A2DA92C53EB3000A743A3 /* SwiftUILearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DA82C53EB3000A743A3 /* SwiftUILearnApp.swift */; };
 		184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DAA2C53EB3000A743A3 /* ContentView.swift */; };
 		184A2DAD2C53EB3100A743A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184A2DAC2C53EB3100A743A3 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1833F8AD2CEF07EE00417C8F /* 01Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01Alignment.swift; sourceTree = "<group>"; };
+		1833F8AF2CEF1A7F00417C8F /* 02AlignmentGuidesTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 02AlignmentGuidesTool.swift; sourceTree = "<group>"; };
 		184A2DA52C53EB3000A743A3 /* SwiftUILearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184A2DA82C53EB3000A743A3 /* SwiftUILearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILearnApp.swift; sourceTree = "<group>"; };
 		184A2DAA2C53EB3000A743A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				184A2DA82C53EB3000A743A3 /* SwiftUILearnApp.swift */,
 				184A2DAA2C53EB3000A743A3 /* ContentView.swift */,
+				1833F8AD2CEF07EE00417C8F /* 01Alignment.swift */,
+				1833F8AF2CEF1A7F00417C8F /* 02AlignmentGuidesTool.swift */,
 				184A2DBA2C550BFE00A743A3 /* 04Stack.swift */,
 				184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */,
 				184A2DAC2C53EB3100A743A3 /* Assets.xcassets */,
@@ -147,8 +153,10 @@
 			files = (
 				184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */,
 				184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */,
+				1833F8B02CEF1A8900417C8F /* 02AlignmentGuidesTool.swift in Sources */,
 				184A2DBB2C550BFE00A743A3 /* 04Stack.swift in Sources */,
 				184A2DA92C53EB3000A743A3 /* SwiftUILearnApp.swift in Sources */,
+				1833F8AE2CEF080000417C8F /* 01Alignment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
