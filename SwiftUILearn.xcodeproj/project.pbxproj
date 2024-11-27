@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1828D5D42CF40BD000E5EF75 /* 06MarkdownUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828D5D32CF40BC400E5EF75 /* 06MarkdownUI.swift */; };
+		1828D5D72CF40E8C00E5EF75 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1828D5D62CF40E8C00E5EF75 /* MarkdownUI */; };
+		1828D5DF2CF5A0FF00E5EF75 /* 03ScrollImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828D5DE2CF5A0FF00E5EF75 /* 03ScrollImage.swift */; };
 		1833F8AE2CEF080000417C8F /* 01Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833F8AD2CEF07EE00417C8F /* 01Alignment.swift */; };
-		1833F8B02CEF1A8900417C8F /* 02AlignmentGuidesTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833F8AF2CEF1A7F00417C8F /* 02AlignmentGuidesTool.swift */; };
+		1833F8B02CEF1A8900417C8F /* 02HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833F8AF2CEF1A7F00417C8F /* 02HStack.swift */; };
 		184A2DA92C53EB3000A743A3 /* SwiftUILearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DA82C53EB3000A743A3 /* SwiftUILearnApp.swift */; };
 		184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DAA2C53EB3000A743A3 /* ContentView.swift */; };
 		184A2DAD2C53EB3100A743A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184A2DAC2C53EB3100A743A3 /* Assets.xcassets */; };
@@ -18,8 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1828D5D32CF40BC400E5EF75 /* 06MarkdownUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 06MarkdownUI.swift; sourceTree = "<group>"; };
+		1828D5DE2CF5A0FF00E5EF75 /* 03ScrollImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 03ScrollImage.swift; sourceTree = "<group>"; };
 		1833F8AD2CEF07EE00417C8F /* 01Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01Alignment.swift; sourceTree = "<group>"; };
-		1833F8AF2CEF1A7F00417C8F /* 02AlignmentGuidesTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 02AlignmentGuidesTool.swift; sourceTree = "<group>"; };
+		1833F8AF2CEF1A7F00417C8F /* 02HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 02HStack.swift; sourceTree = "<group>"; };
 		184A2DA52C53EB3000A743A3 /* SwiftUILearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184A2DA82C53EB3000A743A3 /* SwiftUILearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILearnApp.swift; sourceTree = "<group>"; };
 		184A2DAA2C53EB3000A743A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1828D5D72CF40E8C00E5EF75 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +69,11 @@
 				184A2DA82C53EB3000A743A3 /* SwiftUILearnApp.swift */,
 				184A2DAA2C53EB3000A743A3 /* ContentView.swift */,
 				1833F8AD2CEF07EE00417C8F /* 01Alignment.swift */,
-				1833F8AF2CEF1A7F00417C8F /* 02AlignmentGuidesTool.swift */,
+				1833F8AF2CEF1A7F00417C8F /* 02HStack.swift */,
+				1828D5DE2CF5A0FF00E5EF75 /* 03ScrollImage.swift */,
 				184A2DBA2C550BFE00A743A3 /* 04Stack.swift */,
 				184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */,
+				1828D5D32CF40BC400E5EF75 /* 06MarkdownUI.swift */,
 				184A2DAC2C53EB3100A743A3 /* Assets.xcassets */,
 				184A2DAE2C53EB3100A743A3 /* SwiftUILearn.entitlements */,
 				184A2DAF2C53EB3100A743A3 /* Preview Content */,
@@ -125,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 184A2D9C2C53EB3000A743A3;
+			packageReferences = (
+				1828D5D52CF40E8C00E5EF75 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			productRefGroup = 184A2DA62C53EB3000A743A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,9 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1828D5D42CF40BD000E5EF75 /* 06MarkdownUI.swift in Sources */,
 				184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */,
 				184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */,
-				1833F8B02CEF1A8900417C8F /* 02AlignmentGuidesTool.swift in Sources */,
+				1828D5DF2CF5A0FF00E5EF75 /* 03ScrollImage.swift in Sources */,
+				1833F8B02CEF1A8900417C8F /* 02HStack.swift in Sources */,
 				184A2DBB2C550BFE00A743A3 /* 04Stack.swift in Sources */,
 				184A2DA92C53EB3000A743A3 /* SwiftUILearnApp.swift in Sources */,
 				1833F8AE2CEF080000417C8F /* 01Alignment.swift in Sources */,
@@ -375,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1828D5D52CF40E8C00E5EF75 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1828D5D62CF40E8C00E5EF75 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1828D5D52CF40E8C00E5EF75 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 184A2D9D2C53EB3000A743A3 /* Project object */;
 }
