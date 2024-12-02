@@ -18,6 +18,7 @@
 		184A2DB12C53EB3100A743A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184A2DB02C53EB3100A743A3 /* Preview Assets.xcassets */; };
 		184A2DBB2C550BFE00A743A3 /* 04Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DBA2C550BFE00A743A3 /* 04Stack.swift */; };
 		184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */; };
+		18E8C1C02CFD7F5A0085BE83 /* 07Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8C1BF2CFD7F5A0085BE83 /* 07Transition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		184A2DB02C53EB3100A743A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		184A2DBA2C550BFE00A743A3 /* 04Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 04Stack.swift; sourceTree = "<group>"; };
 		184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 05ScrollView.swift; sourceTree = "<group>"; };
+		18E8C1BF2CFD7F5A0085BE83 /* 07Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 07Transition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				184A2DBA2C550BFE00A743A3 /* 04Stack.swift */,
 				184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */,
 				1828D5D32CF40BC400E5EF75 /* 06MarkdownUI.swift */,
+				18E8C1BF2CFD7F5A0085BE83 /* 07Transition.swift */,
 				184A2DAC2C53EB3100A743A3 /* Assets.xcassets */,
 				184A2DAE2C53EB3100A743A3 /* SwiftUILearn.entitlements */,
 				184A2DAF2C53EB3100A743A3 /* Preview Content */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E8C1C02CFD7F5A0085BE83 /* 07Transition.swift in Sources */,
 				1828D5D42CF40BD000E5EF75 /* 06MarkdownUI.swift in Sources */,
 				184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */,
 				184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */,
