@@ -21,9 +21,9 @@ struct BookListView: View {
                 }else {
                     List {
                         ForEach(books) { book in
-//                            NavigationLink {
-////                                EditBookView(book: book)
-//                            } label: {
+                            NavigationLink {
+                                EditBookView(book: book)
+                            } label: {
                                 HStack(spacing: 10) {
                                     book.icon
                                     VStack(alignment: .leading) {
@@ -40,7 +40,7 @@ struct BookListView: View {
                                         }
                                     }
                                 }
-//                            }
+                            }
                             
                         }
                         .onDelete { indexSet in
