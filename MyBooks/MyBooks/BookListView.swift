@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct BookListView: View {
-    @Environment (\.modelContext) private var modelContext
+    @Environment(\.modelContext) private var modelContext
     @Query(sort: \Book.title) private var books: [Book]
     @State private var createNewBook = false
 
@@ -72,5 +72,8 @@ struct BookListView: View {
 }
 
 #Preview {
-    BookListView()
+    let preview = Preview(Book.self)
+    preview.addExamples(Book.sampleBooks)
+    return BookListView()
+        .modelContainer(preview.container)
 }
