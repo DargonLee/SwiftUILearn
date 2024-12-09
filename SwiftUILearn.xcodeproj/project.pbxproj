@@ -167,6 +167,7 @@
 			files = (
 				1883D9CE2CFC5BB2002E1452 /* 07Transition.swift in Sources */,
 				1828D5D42CF40BD000E5EF75 /* 06MarkdownUI.swift in Sources */,
+				18E8C25E2CFEDD530085BE83 /* 08Alert.swift in Sources */,
 				184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */,
 				184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */,
 				1828D5DF2CF5A0FF00E5EF75 /* 03ScrollImage.swift in Sources */,
