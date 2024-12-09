@@ -17,6 +17,7 @@
 		18BF91052D0584FF002E7E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BF91042D0584FF002E7E49 /* Preview Assets.xcassets */; };
 		18BFC7142D06E08C00166FE6 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7132D06E08B00166FE6 /* PreviewContainer.swift */; };
 		18BFC7162D06E09500166FE6 /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7152D06E09400166FE6 /* BookSamples.swift */; };
+		18BFC7182D06E28400166FE6 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7172D06E28300166FE6 /* BookList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		18BF91042D0584FF002E7E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18BFC7132D06E08B00166FE6 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		18BFC7152D06E09400166FE6 /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
+		18BFC7172D06E28300166FE6 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				18BF90FD2D0584FE002E7E49 /* MyBooksApp.swift */,
 				18BF90FF2D0584FE002E7E49 /* BookListView.swift */,
+				18BFC7172D06E28300166FE6 /* BookList.swift */,
 				188DBE9D2D05A1EB00BEBDED /* Book.swift */,
 				188DBE9F2D05A6C400BEBDED /* RatingsView.swift */,
 				188DBEA32D05B6D200BEBDED /* EditBookView.swift */,
@@ -158,6 +161,7 @@
 				18BF91002D0584FE002E7E49 /* BookListView.swift in Sources */,
 				18BF90FE2D0584FE002E7E49 /* MyBooksApp.swift in Sources */,
 				188DBE9E2D05A1EB00BEBDED /* Book.swift in Sources */,
+				18BFC7182D06E28400166FE6 /* BookList.swift in Sources */,
 				188DBEA42D05B6D200BEBDED /* EditBookView.swift in Sources */,
 				18BFC7162D06E09500166FE6 /* BookSamples.swift in Sources */,
 				188DBEA22D05A7BA00BEBDED /* NewBookView.swift in Sources */,
