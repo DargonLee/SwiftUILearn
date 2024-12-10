@@ -18,6 +18,14 @@
 		18BFC7142D06E08C00166FE6 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7132D06E08B00166FE6 /* PreviewContainer.swift */; };
 		18BFC7162D06E09500166FE6 /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7152D06E09400166FE6 /* BookSamples.swift */; };
 		18BFC7182D06E28400166FE6 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7172D06E28300166FE6 /* BookList.swift */; };
+		18BFC71C2D081B6E00166FE6 /* QuotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC71B2D081B6D00166FE6 /* QuotesListView.swift */; };
+		18BFC71E2D081B7A00166FE6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC71D2D081B7A00166FE6 /* Quote.swift */; };
+		18BFC7242D08260900166FE6 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7232D08260900166FE6 /* Genre.swift */; };
+		18BFC7282D08266B00166FE6 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7262D08266B00166FE6 /* Color+Extension.swift */; };
+		18BFC7292D08266B00166FE6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7252D08266B00166FE6 /* UIColor+Extension.swift */; };
+		18BFC72C2D08271000166FE6 /* GenresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC72B2D08270F00166FE6 /* GenresView.swift */; };
+		18BFC72E2D08284B00166FE6 /* GenresStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC72D2D08284A00166FE6 /* GenresStackView.swift */; };
+		18BFC7302D08287800166FE6 /* NewGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC72F2D08287700166FE6 /* NewGenreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +41,14 @@
 		18BFC7132D06E08B00166FE6 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		18BFC7152D06E09400166FE6 /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
 		18BFC7172D06E28300166FE6 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		18BFC71B2D081B6D00166FE6 /* QuotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesListView.swift; sourceTree = "<group>"; };
+		18BFC71D2D081B7A00166FE6 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		18BFC7232D08260900166FE6 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		18BFC7252D08266B00166FE6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		18BFC7262D08266B00166FE6 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		18BFC72B2D08270F00166FE6 /* GenresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresView.swift; sourceTree = "<group>"; };
+		18BFC72D2D08284A00166FE6 /* GenresStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresStackView.swift; sourceTree = "<group>"; };
+		18BFC72F2D08287700166FE6 /* NewGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGenreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +82,14 @@
 			isa = PBXGroup;
 			children = (
 				18BF90FD2D0584FE002E7E49 /* MyBooksApp.swift */,
-				18BF90FF2D0584FE002E7E49 /* BookListView.swift */,
-				18BFC7172D06E28300166FE6 /* BookList.swift */,
-				188DBE9D2D05A1EB00BEBDED /* Book.swift */,
-				188DBE9F2D05A6C400BEBDED /* RatingsView.swift */,
-				188DBEA32D05B6D200BEBDED /* EditBookView.swift */,
-				188DBEA12D05A7BA00BEBDED /* NewBookView.swift */,
 				18BF91012D0584FF002E7E49 /* Assets.xcassets */,
+				18BFC7222D0825F400166FE6 /* Accessory View */,
+				18BFC71F2D08259D00166FE6 /* Book */,
+				18BFC7272D08266B00166FE6 /* Extensions */,
+				18BFC72A2D0826B700166FE6 /* Genres */,
+				18BFC7212D0825C000166FE6 /* Models */,
 				18BF91032D0584FF002E7E49 /* Preview Content */,
+				18BFC7202D0825AB00166FE6 /* Quotes */,
 			);
 			path = MyBooks;
 			sourceTree = "<group>";
@@ -86,6 +102,62 @@
 				18BF91042D0584FF002E7E49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18BFC71F2D08259D00166FE6 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				18BF90FF2D0584FE002E7E49 /* BookListView.swift */,
+				18BFC7172D06E28300166FE6 /* BookList.swift */,
+				188DBEA32D05B6D200BEBDED /* EditBookView.swift */,
+				188DBEA12D05A7BA00BEBDED /* NewBookView.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		18BFC7202D0825AB00166FE6 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				18BFC71B2D081B6D00166FE6 /* QuotesListView.swift */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		18BFC7212D0825C000166FE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				188DBE9D2D05A1EB00BEBDED /* Book.swift */,
+				18BFC71D2D081B7A00166FE6 /* Quote.swift */,
+				18BFC7232D08260900166FE6 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18BFC7222D0825F400166FE6 /* Accessory View */ = {
+			isa = PBXGroup;
+			children = (
+				188DBE9F2D05A6C400BEBDED /* RatingsView.swift */,
+			);
+			path = "Accessory View";
+			sourceTree = "<group>";
+		};
+		18BFC7272D08266B00166FE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18BFC7252D08266B00166FE6 /* UIColor+Extension.swift */,
+				18BFC7262D08266B00166FE6 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18BFC72A2D0826B700166FE6 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				18BFC72B2D08270F00166FE6 /* GenresView.swift */,
+				18BFC72D2D08284A00166FE6 /* GenresStackView.swift */,
+				18BFC72F2D08287700166FE6 /* NewGenreView.swift */,
+			);
+			path = Genres;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,12 +233,20 @@
 				18BF91002D0584FE002E7E49 /* BookListView.swift in Sources */,
 				18BF90FE2D0584FE002E7E49 /* MyBooksApp.swift in Sources */,
 				188DBE9E2D05A1EB00BEBDED /* Book.swift in Sources */,
+				18BFC7302D08287800166FE6 /* NewGenreView.swift in Sources */,
+				18BFC7242D08260900166FE6 /* Genre.swift in Sources */,
+				18BFC72C2D08271000166FE6 /* GenresView.swift in Sources */,
+				18BFC72E2D08284B00166FE6 /* GenresStackView.swift in Sources */,
 				18BFC7182D06E28400166FE6 /* BookList.swift in Sources */,
 				188DBEA42D05B6D200BEBDED /* EditBookView.swift in Sources */,
 				18BFC7162D06E09500166FE6 /* BookSamples.swift in Sources */,
+				18BFC7282D08266B00166FE6 /* Color+Extension.swift in Sources */,
+				18BFC7292D08266B00166FE6 /* UIColor+Extension.swift in Sources */,
 				188DBEA22D05A7BA00BEBDED /* NewBookView.swift in Sources */,
+				18BFC71E2D081B7A00166FE6 /* Quote.swift in Sources */,
 				18BFC7142D06E08C00166FE6 /* PreviewContainer.swift in Sources */,
 				188DBEA02D05A6C400BEBDED /* RatingsView.swift in Sources */,
+				18BFC71C2D081B6E00166FE6 /* QuotesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

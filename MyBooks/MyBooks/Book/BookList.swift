@@ -28,6 +28,7 @@ struct BookList: View {
             || filterString.isEmpty
         }
         _books = Query(filter: predicate, sort: sortDescriptors)
+        print("books: \(books)")
     }
     
     var body: some View {

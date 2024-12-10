@@ -23,6 +23,15 @@ struct MyBooksApp: App {
         }
         print(URL.applicationSupportDirectory.path(percentEncoded: false))
 
+        addExamples(Book.sampleBooks)
+    }
+    
+    private func addExamples(_ examples: [any PersistentModel]) {
+        Task { @MainActor in
+            examples.forEach { example in
+                container.mainContext.insert(example)
+            }
+        }
     }
     
     var body: some Scene {
