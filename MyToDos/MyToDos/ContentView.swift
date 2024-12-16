@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var showCatory = false
     @State private var toDoEdit: ToDoItem?
     @State private var search = ""
+    @State private var selectedSort: SortOption = .title
     
     @Query(
         sort: \ToDoItem.timestamp,
@@ -21,13 +22,13 @@ struct ContentView: View {
     
     private var filteredItems: [ToDoItem] {
         if search.isEmpty {
-            return items
+            return items.sort(on: selectedSort)
         }
         let fileters = items.compactMap { item in
             let titleQuery = item.title.range(of: search, options: .caseInsensitive) != nil
             return titleQuery ? item : nil
         }
-        return fileters
+        return fileters.sort(on: selectedSort)
     }
     
     var body: some View {
@@ -40,21 +41,28 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("To Do List")
+            .animation(.easeIn, value: filteredItems)
             .searchable(text: $search, prompt: "Search for a to do or a category")
             .overlay {
                 if !search.isEmpty && filteredItems.isEmpty {
                     ContentUnavailableView.search
                 }else if search.isEmpty && filteredItems.isEmpty {
-                    ContentUnavailableView("No To do list", systemImage: "list.bullet")
+                    ContentUnavailableView("Empty list", systemImage: "list.bullet")
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
-                        showCreate.toggle()
-                    }, label: {
-                        Label("Add Item", systemImage: "plus")
-                    })
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Menu {
+                        Picker("", selection:$selectedSort) {
+                            ForEach(SortOption.allCases, id: \.rawValue) { option in
+                                Label(option.rawValue.capitalized, systemImage: option.systemImage).tag(option)
+                            }
+                        }
+                        .labelsHidden()
+                    } label: {
+                        Image(systemName: "ellipsis")
+                            .symbolVariant(.circle)
+                    }
                 }
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {
@@ -63,6 +71,24 @@ struct ContentView: View {
                         Label("Add Catory", systemImage: "folder.badge.plus")
                     })
                 }
+                
+            }
+            .safeAreaInset(edge: .bottom) {
+                Button(action: {
+                    showCreate.toggle()
+                }) {
+                    Image(systemName: "plus")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 56, height: 56)
+                        .background(Color.blue)
+                        .clipShape(Circle())
+                        .shadow(radius: 4)
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .padding([.trailing, .bottom], 16)
+                .background(.clear)
             }
             .sheet(isPresented: $showCreate) {
                 CreateToDoView()
@@ -81,65 +107,15 @@ struct ContentView: View {
     }
 }
 
-struct ToDoItemRow: View {
-    @Environment(\.modelContext) private var modelContext
-    let item: ToDoItem
-    let editItemAction: (ToDoItem) -> Void
-    
-    
-    var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                if item.isCritical {
-                    Image(systemName: "exclamationmark.3")
-                        .symbolVariant(.fill)
-                }
-                
-                Text(item.title)
-                    .font(.title)
-                    .bold()
-                
-                Text(item.timestamp, style: .date)
-                    .font(.callout)
-                
-                if let category = item.category {
-                    Text(category.title)
-                        .font(.callout)
-                        .foregroundColor(.blue)
-                }
-            }
-            
-            Spacer()
-            
-            Button {
-                withAnimation {
-                    item.isCompledted.toggle()
-                }
-            } label: {
-                Image(systemName: "checkmark")
-                    .symbolVariant(.circle.fill)
-                    .foregroundColor(item.isCritical ? .green : .gray)
-                    .font(.largeTitle)
-            }
-            .buttonStyle(.plain)
-        }
-        .swipeActions {
-            Button(role: .destructive) {
-                withAnimation {
-                    modelContext.delete(item)
-                }
-            } label: {
-                Label("Delete", systemImage: "trash")
-                    .symbolVariant(.fill)
-            }
-            
-            Button {
-                editItemAction(item)
-            } label: {
-                Label("Edit", systemImage: "pencil")
-                    .symbolVariant(.fill)
-            }
-            .tint(.orange)
+private extension [ToDoItem] {
+    func sort(on option: SortOption) -> [ToDoItem] {
+        switch option {
+        case .title:
+            return sorted { $0.title < $1.title }
+        case .date:
+            return sorted { $0.timestamp < $1.timestamp }
+        case .category:
+            return sorted { $0.category?.title ?? "" < $1.category?.title ?? "" }
         }
     }
 }

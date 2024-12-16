@@ -19,6 +19,7 @@
 		184A2DBB2C550BFE00A743A3 /* 04Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DBA2C550BFE00A743A3 /* 04Stack.swift */; };
 		184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */; };
 		1883D9CE2CFC5BB2002E1452 /* 07Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883D9CD2CFC5BB2002E1452 /* 07Transition.swift */; };
+		18BFC7632D0AC09B00166FE6 /* 08SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7622D0AC09500166FE6 /* 08SwiftData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		184A2DBA2C550BFE00A743A3 /* 04Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 04Stack.swift; sourceTree = "<group>"; };
 		184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 05ScrollView.swift; sourceTree = "<group>"; };
 		1883D9CD2CFC5BB2002E1452 /* 07Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 07Transition.swift; sourceTree = "<group>"; };
+		18BFC7622D0AC09500166FE6 /* 08SwiftData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 08SwiftData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */,
 				1828D5D32CF40BC400E5EF75 /* 06MarkdownUI.swift */,
 				1883D9CD2CFC5BB2002E1452 /* 07Transition.swift */,
+				18BFC7622D0AC09500166FE6 /* 08SwiftData.swift */,
 				184A2DAC2C53EB3100A743A3 /* Assets.xcassets */,
 				184A2DAE2C53EB3100A743A3 /* SwiftUILearn.entitlements */,
 				184A2DAF2C53EB3100A743A3 /* Preview Content */,
@@ -167,8 +170,8 @@
 			files = (
 				1883D9CE2CFC5BB2002E1452 /* 07Transition.swift in Sources */,
 				1828D5D42CF40BD000E5EF75 /* 06MarkdownUI.swift in Sources */,
-				18E8C25E2CFEDD530085BE83 /* 08Alert.swift in Sources */,
 				184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */,
+				18BFC7632D0AC09B00166FE6 /* 08SwiftData.swift in Sources */,
 				184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */,
 				1828D5DF2CF5A0FF00E5EF75 /* 03ScrollImage.swift in Sources */,
 				1833F8B02CEF1A8900417C8F /* 02HStack.swift in Sources */,
