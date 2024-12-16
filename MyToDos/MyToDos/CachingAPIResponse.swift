@@ -45,21 +45,38 @@ final class PostModel: Codable, Identifiable {
 struct PostsView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var posts: [PostModel]
+    @State private var isLoading = false
+    @State private var errorMessage: String?
+    @State private var hasFetched = false
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(posts, id: \.id) { post in
-                    PostRow(post: post)
+            Group {
+                if isLoading {
+                    ProgressView("正在加载...")
+                } else if let errorMessage = errorMessage {
+                    Text("加载失败: \(errorMessage)")
+                    Button("重试") {
+                        Task { await fetchPhotosSafely() }
+                    }
+                } else {
+                    List {
+                        ForEach(posts, id: \.id) { post in
+                            PostRowView(post: post)
+                        }
+                        .listRowSeparator(.hidden)
+                        .listRowBackground(Color.clear)
+                    }
+                    .listStyle(.plain)
+                    .scrollContentBackground(.hidden)
                 }
-                .listRowSeparator(.hidden)
-                .listRowBackground(Color.clear)
             }
             .navigationTitle("Posts")
-            .listStyle(.plain)
-            .scrollContentBackground(.hidden)
             .task {
-                await fetchPhotosSafely()
+                if !hasFetched {
+                    hasFetched = true
+                    await fetchPhotosSafely()
+                }
             }
         }
     }
@@ -70,7 +87,7 @@ struct PostsView: View {
         .modelContainer(for: PostModel.self)
 }
 
-struct PostRow: View {
+struct PostRowView: View {
     let post: PostModel
     
     var body: some View {
@@ -122,6 +139,9 @@ extension PostsView {
     }
     
     func fetchPhotos() async throws {
+        isLoading = true
+        defer { isLoading = false }
+        
         let url = URL(string: "https://jsonplaceholder.typicode.com/photos")!
         let request = URLRequest(url: url)
         let (data, _) = try await URLSession.shared.data(for: request)
