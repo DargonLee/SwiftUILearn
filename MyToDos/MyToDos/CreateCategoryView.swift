@@ -21,6 +21,16 @@ class Category {
     }
 }
 
+extension Category {
+    static var defaults: [Category] {
+        [
+            .init(title: "Personal"),
+            .init(title: "Work"),
+            .init(title: "Study"),
+        ]
+    }
+}
+
 struct CreateCategoryView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
