@@ -36,8 +36,12 @@ actor ToDoItemContainer {
             return
         }
         
-        Category.defaults.forEach { category in
-            context.insert(category)
+        let categorys = CategoryJSONDecoder.decode(from: "CategoryDefautes")
+        if categorys.count > 0 {
+            categorys.forEach { item in
+                let category = Category(title: item.title)
+                context.insert(category)
+            }
         }
         
         do {
