@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Say Hello",
+        "isCritical": true,
+        "isCompleted": false
+    },
+    {
+        "title": "Go to the store",
+        "isCritical": false,
+        "isCompleted": true
+    },
+    {
+        "title": "Go to the gym",
+        "isCritical": true,
+        "isCompleted": false,
+        "category": {
+            "title": "Family"
+        }
+    }
+]

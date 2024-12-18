@@ -97,7 +97,6 @@ extension CreateToDoView {
     func save() {
         modelContext.insert(item)
         item.category = category
-        category?.items.append(item)
     }
 }
 
