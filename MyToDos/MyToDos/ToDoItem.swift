@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftData
+import UIKit
 
 @Model
 final class ToDoItem {
@@ -14,6 +15,10 @@ final class ToDoItem {
     var timestamp: Date
     var isCritical: Bool
     var isCompledted: Bool
+    
+    // 使用 @Attribute(.externalStorage) 可以优化大文件存储
+    @Attribute(.externalStorage)
+    var imageData: Data?
     
     @Relationship(inverse: \Category.items)
     var category: Category?
@@ -28,6 +33,11 @@ final class ToDoItem {
         self.timestamp = timestamp
         self.isCritical = isCritical
         self.isCompledted = isCompledted
+    }
+    
+    var uiImage: UIImage? {
+        guard let imageData = imageData else { return nil }
+        return UIImage(data: imageData)
     }
 }
 

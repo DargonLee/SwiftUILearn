@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import PhotosUI
 
 struct CreateToDoView: View {
     @Environment(\.dismiss) private var dismiss
@@ -14,6 +15,8 @@ struct CreateToDoView: View {
     @Query private var categories: [Category]
     @State private var item = ToDoItem()
     @State private var category: Category?
+    @State private var image: PhotosPickerItem?
+    
     
     var body: some View {
         NavigationStack {
@@ -34,12 +37,41 @@ struct CreateToDoView: View {
                     .pickerStyle(.inline)
                 }
                 Section {
+                    if let uiImage = item.uiImage {
+                        Image(uiImage: uiImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: .infinity, maxHeight: 300)
+                    }
+                    
+                    PhotosPicker(
+                        selection: $image,
+                        matching: .images,
+                        photoLibrary: .shared()
+                    ) {
+                        Label("Select an image", systemImage: "photo")
+                            .symbolVariant(.fill)
+                    }
+                    
+                    if (item.imageData != nil) {
+                        Button(role: .destructive) {
+                            withAnimation {
+                                item.imageData = nil
+                                image = nil
+                            }
+                        } label: {
+                            Label("Delete", systemImage: "trash")
+                                .foregroundStyle(.red)
+                        }
+                    }
+                }
+                Section {
                     Button("Create") {
                         save()
                         dismiss()
                     }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .buttonStyle(.borderedProminent)
+                    .frame(maxWidth: .infinity)
+                    .buttonStyle(.automatic)
                 }
             }
             .navigationTitle("Create ToDo")
@@ -51,8 +83,13 @@ struct CreateToDoView: View {
                     }
                 }
             }
+            .task(id: image) {
+                if let data = try? await image?.loadTransferable(type: Data.self) {
+                    item.imageData = data
+                }
+            }
         }
-        .presentationDetents([.medium])
+        .presentationDetents([.medium, .large])
     }
 }
 

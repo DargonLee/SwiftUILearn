@@ -134,6 +134,7 @@ extension PostsView {
         do {
             try await fetchPhotos()
         } catch {
+            errorMessage = error.localizedDescription
             print("Failed to fetch photos: \(error.localizedDescription)")
         }
     }

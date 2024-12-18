@@ -19,6 +19,8 @@ struct ToDoItemRow: View {
                 if item.isCritical {
                     Image(systemName: "exclamationmark.3")
                         .symbolVariant(.fill)
+                        .foregroundStyle(.red.gradient)
+                        .imageScale(.large)
                 }
                 
                 Text(item.title)
@@ -32,6 +34,21 @@ struct ToDoItemRow: View {
                     Text(category.title)
                         .font(.callout)
                         .foregroundColor(.blue)
+                }
+                
+                if let image = item.uiImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: .infinity, minHeight: 150, maxHeight: 250)
+                        .cornerRadius(12)
+                        .clipped()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .stroke(Color.gray.opacity(0.3), lineWidth: 1)
+                        )
+                        .shadow(radius: 4, x: 0, y: 2)
                 }
             }
             
