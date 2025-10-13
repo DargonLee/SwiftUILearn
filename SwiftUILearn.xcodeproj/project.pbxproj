@@ -20,6 +20,13 @@
 		184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */; };
 		1883D9CE2CFC5BB2002E1452 /* 07Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883D9CD2CFC5BB2002E1452 /* 07Transition.swift */; };
 		18BFC7632D0AC09B00166FE6 /* 08SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7622D0AC09500166FE6 /* 08SwiftData.swift */; };
+		F2D760B82E9D24F5006A196A /* 09AlignmentGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D760B72E9D24F5006A196A /* 09AlignmentGuide.swift */; };
+		F2D760BA2E9D2531006A196A /* 10ScrollViewPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D760B92E9D2531006A196A /* 10ScrollViewPageView.swift */; };
+		F2D760BC2E9D2559006A196A /* 11VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D760BB2E9D2559006A196A /* 11VisualEffectView.swift */; };
+		F2D760BF2E9D25AB006A196A /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D760BE2E9D25AB006A196A /* PhotoModel.swift */; };
+		F2D760C12E9D25B8006A196A /* DownloadImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D760C02E9D25B8006A196A /* DownloadImagesView.swift */; };
+		F2D760C32E9D25C3006A196A /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D760C22E9D25C3006A196A /* PhotoModelDataService.swift */; };
+		F2D760C52E9D25C9006A196A /* DownloadImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D760C42E9D25C9006A196A /* DownloadImagesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,13 @@
 		184A2DBC2C562EDB00A743A3 /* 05ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 05ScrollView.swift; sourceTree = "<group>"; };
 		1883D9CD2CFC5BB2002E1452 /* 07Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 07Transition.swift; sourceTree = "<group>"; };
 		18BFC7622D0AC09500166FE6 /* 08SwiftData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 08SwiftData.swift; sourceTree = "<group>"; };
+		F2D760B72E9D24F5006A196A /* 09AlignmentGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 09AlignmentGuide.swift; sourceTree = "<group>"; };
+		F2D760B92E9D2531006A196A /* 10ScrollViewPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10ScrollViewPageView.swift; sourceTree = "<group>"; };
+		F2D760BB2E9D2559006A196A /* 11VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11VisualEffectView.swift; sourceTree = "<group>"; };
+		F2D760BE2E9D25AB006A196A /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		F2D760C02E9D25B8006A196A /* DownloadImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImagesView.swift; sourceTree = "<group>"; };
+		F2D760C22E9D25C3006A196A /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
+		F2D760C42E9D25C9006A196A /* DownloadImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImagesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,10 @@
 				1828D5D32CF40BC400E5EF75 /* 06MarkdownUI.swift */,
 				1883D9CD2CFC5BB2002E1452 /* 07Transition.swift */,
 				18BFC7622D0AC09500166FE6 /* 08SwiftData.swift */,
+				F2D760B72E9D24F5006A196A /* 09AlignmentGuide.swift */,
+				F2D760B92E9D2531006A196A /* 10ScrollViewPageView.swift */,
+				F2D760BB2E9D2559006A196A /* 11VisualEffectView.swift */,
+				F2D760BD2E9D2599006A196A /* 12DownloadImage */,
 				184A2DAC2C53EB3100A743A3 /* Assets.xcassets */,
 				184A2DAE2C53EB3100A743A3 /* SwiftUILearn.entitlements */,
 				184A2DAF2C53EB3100A743A3 /* Preview Content */,
@@ -93,6 +111,17 @@
 				184A2DB02C53EB3100A743A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2D760BD2E9D2599006A196A /* 12DownloadImage */ = {
+			isa = PBXGroup;
+			children = (
+				F2D760C42E9D25C9006A196A /* DownloadImagesViewModel.swift */,
+				F2D760C22E9D25C3006A196A /* PhotoModelDataService.swift */,
+				F2D760C02E9D25B8006A196A /* DownloadImagesView.swift */,
+				F2D760BE2E9D25AB006A196A /* PhotoModel.swift */,
+			);
+			path = 12DownloadImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +201,16 @@
 				1828D5D42CF40BD000E5EF75 /* 06MarkdownUI.swift in Sources */,
 				184A2DBD2C562EDB00A743A3 /* 05ScrollView.swift in Sources */,
 				18BFC7632D0AC09B00166FE6 /* 08SwiftData.swift in Sources */,
+				F2D760BF2E9D25AB006A196A /* PhotoModel.swift in Sources */,
+				F2D760BA2E9D2531006A196A /* 10ScrollViewPageView.swift in Sources */,
 				184A2DAB2C53EB3000A743A3 /* ContentView.swift in Sources */,
+				F2D760B82E9D24F5006A196A /* 09AlignmentGuide.swift in Sources */,
+				F2D760BC2E9D2559006A196A /* 11VisualEffectView.swift in Sources */,
+				F2D760C12E9D25B8006A196A /* DownloadImagesView.swift in Sources */,
 				1828D5DF2CF5A0FF00E5EF75 /* 03ScrollImage.swift in Sources */,
 				1833F8B02CEF1A8900417C8F /* 02HStack.swift in Sources */,
+				F2D760C32E9D25C3006A196A /* PhotoModelDataService.swift in Sources */,
+				F2D760C52E9D25C9006A196A /* DownloadImagesViewModel.swift in Sources */,
 				184A2DBB2C550BFE00A743A3 /* 04Stack.swift in Sources */,
 				184A2DA92C53EB3000A743A3 /* SwiftUILearnApp.swift in Sources */,
 				1833F8AE2CEF080000417C8F /* 01Alignment.swift in Sources */,
@@ -307,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILearn/Preview Content\"";
-				DEVELOPMENT_TEAM = CPL4GGWSTS;
+				DEVELOPMENT_TEAM = DNJB983JK4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -326,7 +362,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uusafe.SwiftUILearn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.DownloadImages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -345,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILearn/Preview Content\"";
-				DEVELOPMENT_TEAM = CPL4GGWSTS;
+				DEVELOPMENT_TEAM = DNJB983JK4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -364,7 +400,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uusafe.SwiftUILearn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.DownloadImages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
